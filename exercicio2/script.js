@@ -5,8 +5,8 @@ console.log(numero1, numero2)
 
 const primeiroNumeroEmaiorQueSegundo = numero1 > numero2
 const primeiroNumeroEIgualAoSegundo = numero1 === numero2
-const PrimeiroNumeroEDivisivelPeloSegundo = numero1 / numero2
-const segundoNumeroEDivisivelPeloPrimeiro = numero2 / numero1
+const PrimeiroNumeroEDivisivelPeloSegundo = numero1 % numero2 === 0
+const segundoNumeroEDivisivelPeloPrimeiro = numero2 % numero1 === 0
 
 console.log(primeiroNumeroEmaiorQueSegundo)
 console.log(primeiroNumeroEIgualAoSegundo)
