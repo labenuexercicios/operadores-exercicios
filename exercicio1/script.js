@@ -6,6 +6,8 @@ let numeroPar = +prompt("Digite um número par!");
         console.log("impar"); 
     }
 
+    //kjhf
+
 
 
          

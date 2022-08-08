@@ -12,11 +12,13 @@ if (num1 > num2){
     console.log("Segundo número é igual!");
 }
 
+
 if (num1 / num2 % 2 === 0){
     console.log("O primeiro Número é divisivél pelo segundo:"); 
 }else{
     console.log("O primeiro Números não é divisivél pelo segundo:"); 
 }
+
 
 if (num2 / num1 % 2 === 0){
     console.log("O segundo Número divisivél pelo primeiro:");
