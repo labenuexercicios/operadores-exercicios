@@ -6,5 +6,5 @@ const converterSegundoNumero = Number(segundoNumero);
 
 console.log(converterPrimeiroNumero > converterSegundoNumero);
 console.log(converterPrimeiroNumero === converterSegundoNumero);
-console.log(converterPrimeiroNumero % converterSegundoNumero === 0);
-console.log(converterSegundoNumero % converterPrimeiroNumero === 0);
+console.log(converterPrimeiroNumero % converterSegundoNumero == 0);
+console.log(converterSegundoNumero % converterPrimeiroNumero == 0);
