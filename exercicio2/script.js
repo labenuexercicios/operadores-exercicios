@@ -1,3 +1,4 @@
+
 const numb1 = (prompt( "Digite um numero" )) 
 const numb2 = (prompt( "Digite outro numero" ))
  
