@@ -1,4 +1,4 @@
-# A008 - Operadores
+# Operadores
 
 ### Setup do projeto no Git
 
