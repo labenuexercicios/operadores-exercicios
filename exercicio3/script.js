@@ -27,8 +27,9 @@ const abril = 1874.00
 const maio = 7000.00
 const junho = 9450.00
 
+
 // calculo comissão mensal
-const comissaoJan = janeiro * 0.1 
+const comissaoJan = janeiro * 0.1
 const comissaoFev = fevereiro * 0.1
 const comissaoMar = marco * 0.1
 const comissaoAbr = abril * 0.1
@@ -38,17 +39,17 @@ const comissaoJun = junho * 0.1
 //salario fixo + auxilio creche
 console.log("O salário fixo mais o auxílio creche: R$", salario + auxilioCreche)
 //comissão em janeiro
-console.log("Comissão em  Janeiro", comissaoJan )
+console.log("Comissão em  Janeiro: R$", comissaoJan)
 //Quanto Fulano de Silva será descontado em janeiro pelo INSS
-console.log("Desconto do INSS em janeiro", (salario + comissaoJan) * 0.05)
+console.log("Desconto do INSS em janeiro: R$", (salario + comissaoJan) * 0.05)
 
 //Imprima no console o cálculo do salário de todos os meses com acréscimos e descontos.
-const salarioJaneiro = salario + auxilioCreche + comissaoJan - (salario + comissaoJan) * 0.05
-const salarioFevereiro = salario + auxilioCreche + comissaoFev - (salario + comissaoFev) * 0.05
-const salarioMarco = salario + auxilioCreche + comissaoMar - (salario + comissaoMar) * 0.05 
-const salarioAbril = salario + auxilioCreche + comissaoAbr - (salario + comissaoAbr) * 0.05 
-const salarioMaio = salario + auxilioCreche + comissaoMaio - (salario + comissaoMaio) * 0.05 
-const salarioJunho = salario + auxilioCreche + comissaoJun - (salario + comissaoJun) * 0.05 
+const salarioJaneiro = Number(salario + auxilioCreche + comissaoJan - (salario + comissaoJan) * 0.05)
+const salarioFevereiro = Number(salario + auxilioCreche + comissaoFev - (salario + comissaoFev) * 0.05)
+const salarioMarco = Number(salario + auxilioCreche + comissaoMar - (salario + comissaoMar) * 0.05)
+const salarioAbril = Number(salario + auxilioCreche + comissaoAbr - (salario + comissaoAbr) * 0.05 )
+const salarioMaio = Number(salario + auxilioCreche + comissaoMaio - (salario + comissaoMaio) * 0.05) 
+const salarioJunho = Number(salario + auxilioCreche + comissaoJun - (salario + comissaoJun) * 0.05)
 
 console.log("Salário Janeiro:R$", salarioJaneiro )
 console.log("Salário Fevereiro:", salarioFevereiro )
@@ -58,6 +59,7 @@ console.log("Salário Maio:R$", salarioMaio)
 console.log("Salário Junho:R$",salarioJunho)
 
 // Média do salário em 6 meses
-const media = (salarioJaneiro + salarioFevereiro + salarioMarco + salarioAbril + salarioMaio + salarioJunho) / 6
+const totalSalarios = Number(salarioJaneiro + salarioFevereiro + salarioMarco + salarioAbril + salarioMaio + salarioJunho)
+const media = Number(totalSalarios / 6)
 
 console.log("Média dos salarios em 6 meses:R$", media)
