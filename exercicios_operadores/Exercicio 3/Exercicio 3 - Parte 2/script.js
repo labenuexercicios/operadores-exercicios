@@ -44,14 +44,14 @@ console.log(`Portador da CNH: ${cnh}`,`, Possui ${filhos} filhos`, `, Atualmente
 console.log(`Salario atual R$${salario}`,`, Recebe 10% de comissao`, `, Foi admitido no ano de ${admi}`);
 console.log(`Relatorio Financeiro do funcionario`,`Salario fixo mais o auxilio creche: R$${salario + auxCreche}`);
 console.log(`Relatorio de comissao Janeiro: R$${vJan}`);
-console.log(`Desconto INSS Janeiro: ${(vJan + salario) * 0.05}`);
+console.log(`Desconto INSS Janeiro: ${((vJan + salario + auxCreche ) * 0.05).toFixed(2)}`);
 console.log(`Relatorio Financeiro Mensal (Janeiro - Junho):`);
-console.log(`Janeiro: R$${inss + vJan}`);
-console.log(`Fevereiro: R$${ inss + vFev}`);
-console.log(`Marco: R$${ inss + vMar}`);
-console.log(`Abril: R$${ inss + vAbri}`);
-console.log(`Maio: R$${ inss + vMai}`);
-console.log(`Junho: R$${ inss + vJun}`);
+console.log(`Janeiro: R$${((salario + auxCreche + vJan) * 0.05).toFixed(2)}`);
+console.log(`Fevereiro: R$${((salario + auxCreche + vFev) * 0.05).toFixed(2)}`);
+console.log(`Marco: R$${((salario + auxCreche + vMar) * 0.05).toFixed(2)}`);
+console.log(`Abril: R$${((salario + auxCreche + vAbri) * 0.05).toFixed(2)}`);
+console.log(`Maio: R$${((salario + auxCreche + vMai) * 0.05).toFixed(2)}`);
+console.log(`Junho: R$${((salario + auxCreche + vJun) * 0.05).toFixed(2)}`);
 console.log(`Media salarial semestral: R$${mediaSal}`);
 
 
