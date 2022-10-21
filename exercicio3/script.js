@@ -15,70 +15,121 @@ let valorD = !(20 > 50 || 50 > 70);
 console.log("Valor D é: ", valorD);
 
 //PARTE 2
-const funcionario = "Nome do Funcionário: Fulano da Silva"
-console.log(funcionario)
 
-const cpf = "CPF do Funcionário: 000.000.000-00"
-console.log(cpf)
+/*O funcionário Fulano de Silva, com CPF: 000.000.000-00,
+ Nasceu em 10/02/1990, reside em: Rua dos bobos nº 0 e possui 2 filhos. 
+ Possui habilitação? Sim. Ocupa o cargo de vendedor.
+ Recebe um salário de 2.000,00 reais, 
+ Mais comissão de 10% sobre o total de vendas no mês e entrou na empresa em 2019.*/
 
-const dataNascimento = "Data de Nascimento do Funcionário: 10/02/1990"
-console.log(dataNascimento)
+let nomeCompleto = prompt("Nome Completo do Funcionário:")
+console.log("Nome Completo do Funcionário:" + nomeCompleto)
 
-const endereco = "Endereço do Funcionário: Rua dos Bobos, 0"
-console.log(endereco)
+let dataNascimento = prompt("Data de Nascimento do Funcionário:")
+console.log("Data de Nascimento do Funcionário:" + dataNascimento)
 
-const filhos = "Número de filhos do Funcionário: 2"
-console.log(filhos)
+let endereco = prompt("Qual é o endereço do Funcionário:")
+console.log("Endereço do Funcionário:" + endereco)
 
-const cnh = "O Funcionário possui CNH? Sim!"
-console.log(cnh)
+let cpf = Number(prompt("Qual é o CPF do Funcionário:"))
+console.log("CPF do Funcionário:" + cpf)
 
-const vendedor = "Qual o cargo do Funcionáriio? Vendedor."
-console.log(vendedor)
+let escolaridade = prompt("Qual é a escolaridade do Funcionário:")
+console.log("Escolaridade do Funcionário:" + escolaridade)
 
-let salario = "O slário do Funcionário é: 2.000"
-console.log(salario)
+let cnh = prompt("O Funcionário possui CNH?")
+console.log("O Funcionário possui CNH?" + cnh)
 
-let comissao = "O Funcionário recebe comissão de 10% sobre o total de vendas no mês."
-console.log(comissao)
+let filhos = Number(prompt("O Funcionário tem filhos? se sim, quantos? se não, digite 0."))
+console.log("Quantidade de filhos do Funcionário:" + filhos)
 
-const anoAdmissao = "Ano de admissão do Funcionário: 2019."
-console.log(anoAdmissao)
+let cargoAtual = prompt("Qual é o cargo atual do Funcionário:")
+console.log("Cargo atual do Funcionário:" + cargoAtual)
 
-let jan = 5784.50
-let fev = 3418.41
-let mar = 4124.10
-let abr = 1874.00
-let mai = 7000.00
-let jun = 9450.00
+let salarioFixo = Number(prompt("Qual é o salário fixo do Funcionário:"))
+console.log("Salário fixo do Funcionário:" + salarioFixo)
 
-let salarioComAuxCreche = 2091.00
-let comissaoJan = jan*0.1
-let comissaoFev = fev*0.1
-let comissaoMar = mar*0.1
-let comissaoAbr = abr*0.1
-let comissaoMai = mai*0.1
-let comissaoJun = jun*0.1
+let comissao = Number(prompt("O Funcionário recebe comissão? se sim, digite a porcentagem."))
+console.log("Valor da Comissão:" + comissao)
 
-let salarioJan = salarioComAuxCreche + comissaoJan
-let salarioFev = salarioComAuxCreche + comissaoFev
-let salarioMar = salarioComAuxCreche + comissaoMar
-let salarioAbr = salarioComAuxCreche + comissaoAbr
-let salarioMai = salarioComAuxCreche + comissaoMai
-let salarioJun = salarioComAuxCreche + comissaoJun
+let anoAdmissao = Number(prompt("Qual o ano de admissão do Funcionário:"))
+console.log("Ano de admissão do Funcionário:" + anoAdmissao)
 
-let inssJan = salarioJan*0.5
-console.log("O salário de Janeiro é:", inssJan)
-let inssFev = salarioFev*0.5
-console.log("O salário de Feveiro é:", inssFev)
-let inssMar = salarioMar*0.5
-console.log("O salário de Março é:", inssMar)
-let inssAbr = salarioAbr*0.5
-console.log("O salário de Abril é:", inssAbr)
-let inssMai = salarioMai*0.5
-console.log("O salário de Maio é:", inssMai)
-let inssJun = salarioJun*0.5
-console.log("O salário de Junho é:", inssJun)
+//Calcule:
+//a) o salário fixo + o auxílio creche:
 
-let mediaSalarial = (inssJan + inssFev + inssMar + inssAbr + inssMai + inssJun) / 6
-console.log("A média salarial é: ", mediaSalarial)
+let auxCreche = 45.90*filhos
+
+let salarioComAuxCreche = salarioFixo + auxCreche
+console.log("O salário do Funcionário", nomeCompleto, "com Auxilio Creche é de:", salarioComAuxCreche)
+
+/*b) Quanto Fulano de Silva receberá de comissão em janeiro 
+( dica: para calcular 20% de algum valor fazemos o cálculo: valor*0.2)*/
+
+let comissaoJan = ((comissao + 5784.50) / 100)
+let comissaoFev = ((comissao + 3418.41) / 100)
+let comissaoMar = ((comissao + 4124.10) / 100)
+let comissaoAbr = ((comissao + 1870) / 100)
+let comissaoMai = ((comissao + 7000) / 100)
+let comissaoJun = ((comissao + 9450) / 100)
+
+console.log("A comissão que", nomeCompleto, ", receberá em Janeiro será de: R$", comissaoJan)
+
+/* c)Quanto Fulano de Silva será descontado em janeiro pelo INSS 
+( o valor a ser calculado deve levar em consideração o salário + porcentagem de vendas.)*/
+
+let descInss = 0.05
+
+let descInssJan = ((salarioComAuxCreche + comissaoJan) * descInss)
+let descInssFev = ((salarioComAuxCreche + comissaoFev) * descInss)
+let descInssMar = ((salarioComAuxCreche + comissaoMar) * descInss)
+let descInssAbr = ((salarioComAuxCreche + comissaoAbr) * descInss)
+let descInssMai = ((salarioComAuxCreche + comissaoMai) * descInss)
+let descInssJun = ((salarioComAuxCreche + comissaoJun) * descInss)
+
+console.log("O valor descontado do INSS do salário de", nomeCompleto, "será de:", descInssJan)
+
+/* d)Imprima no console o cálculo do salário de todos os meses com acréscimos e descontos.*/
+
+let salarioJanBruto = (salarioComAuxCreche + comissaoJan)
+let salarioJanLiquido = ((salarioComAuxCreche + comissaoJan) - descInssJan)
+
+let salarioFevBruto = (salarioComAuxCreche + comissaoFev)
+let salarioFevLiquido = ((salarioComAuxCreche + comissaoFev) - descInssFev)
+
+let salarioMarBruto = (salarioComAuxCreche + comissaoMar)
+let salarioMarLiquido = ((salarioComAuxCreche + comissaoMar) - descInssMar)
+
+let salarioAbrBruto = (salarioComAuxCreche + comissaoAbr)
+let salarioAbrLiquido = ((salarioComAuxCreche + comissaoAbr) - descInssAbr)
+
+let salarioMaiBruto = (salarioComAuxCreche + comissaoMai)
+let salarioMaiLiquido = ((salarioComAuxCreche + comissaoMai) - descInssMai)
+
+let salarioJunBruto = (salarioComAuxCreche + comissaoJun)
+let salarioJunLiquido = ((salarioComAuxCreche + comissaoJun) - descInssJun)
+
+console.log("O salário bruto de", nomeCompleto, ", será de:", salarioJanBruto)
+console.log("O salário líquido de", nomeCompleto, ", será de:", salarioJanLiquido)
+
+console.log("O salário bruto de", nomeCompleto, ", será de:", salarioFevBruto)
+console.log("O salário líquido de", nomeCompleto, ", será de:", salarioFevLiquido)
+
+console.log("O salário bruto de", nomeCompleto, ", será de:", salarioMarBruto)
+console.log("O salário líquido de", nomeCompleto, ", será de:", salarioMarLiquido)
+
+console.log("O salário bruto de", nomeCompleto, ", será de:", salarioAbrBruto)
+console.log("O salário líquido de", nomeCompleto, ", será de:", salarioAbrLiquido)
+
+console.log("O salário bruto de", nomeCompleto, ", será de:", salarioMaiBruto)
+console.log("O salário líquido de", nomeCompleto, ", será de:", salarioMaiLiquido)
+
+console.log("O salário bruto de", nomeCompleto, ", será de:", salarioJunBruto)
+console.log("O salário líquido de", nomeCompleto, ", será de:", salarioJunLiquido)
+
+/*A média do salário em  seis meses (de janeiro a junho), levando em consideração as comissões e auxílio.
+( Dica: a média aritmética é calculada somando um grupo de números e dividindo pela quantidade de elementos somados. 
+Por exemplo, a soma de 2, 3, 3, 5, 7 e 10 é 30 dividido por 6, dará média 5.)*/
+
+let mediaSalarialBruta = ((salarioJanBruto + salarioFevBruto + salarioMarBruto + salarioAbrBruto + salarioMaiBruto + salarioJunBruto) / 6)
+console.log("A média salarial bruta dos primeiros seis meses de", nomeCompleto, ", é de:", mediaSalarialBruta)
