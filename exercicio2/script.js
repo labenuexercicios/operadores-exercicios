@@ -13,8 +13,13 @@ resultado1 = (numero1 % numero2==0)
 console.log("O primeiro numero é divisível pelo segundo?", resultado1)
 
 
-resultado1 = (numero1 % numero2==0)
-console.log("O primeiro numero é divisível pelo segundo?", resultado1)
+resultado1 = (numero2 % numero1==0)
+console.log("O segundo numero é divisível pelo primeiro?", resultado1)
+
+
+
+
+
 
 
 
@@ -59,7 +64,7 @@ if(numero1%numero2){
 }else{
     console.log(false);
 }
- */
+
 
 
 
