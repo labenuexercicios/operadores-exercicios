@@ -39,4 +39,6 @@ console.log("salário de abril", salarioabril)
 console.log("salário de maio", salariomaio)
 console.log("salário de junho", salariojunho)
 salariomedia = (salariojaneiro + salariofevereiro + salariomarco + salarioabril + salariomaio + salariojunho) / 6
-console.log("a média do salário dos 6 meses citados foi", salariomedia)
+console.log("a média do salário dos 6 meses citados foi", salariomedia) 
+
+//
