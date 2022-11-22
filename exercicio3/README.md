@@ -47,7 +47,10 @@ d)  Desconto do INSS 5% do salário
 
 Calcule:
 
-1) O salário fixo mais o auxílio creche
+1) c) Total de vendas dos meses de janeiro a junho:
+
+    - Janeiro: R$ 5.784,50
+    - Fevere
 
 2) Quanto Fulano de Silva receberá de comissão em janeiro ( dica: para calcular 20% de algum valor fazemos o cálculo: valor*0.2)
 
