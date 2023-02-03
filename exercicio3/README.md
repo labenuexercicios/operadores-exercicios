@@ -26,7 +26,7 @@ Na aula passada começamos a implementar um sistema para o RH de uma empresa.
 
 Vamos continuar? Suponhamos que o exercício da aula passada tenha como resultado o relatório abaixo:
 
-**O funcionário Fulano de Silva, com CPF: 000.000.000-00, nasceu em 10/02/1990, reside em: Rua dos bobos nº 0 e possui 2 filhos. Possui habilitação? Sim. Ocupa o cargo de vendedor, recebe um salário de 2.000,00 reais, mais comissão de 10% sobre o total de vendas no mês e entrou na empresa em 2019.**
+**O funcionário Fulano da Silva, com CPF: 000.000.000-00, nasceu em 10/02/1990, reside em: Rua dos bobos nº 0 e possui 2 filhos. Possui habilitação? Sim. Ocupa o cargo de vendedor, recebe um salário de 2.000,00 reais, mais comissão de 10% sobre o total de vendas no mês e entrou na empresa em 2019.**
 
 Levando em consideração os dados abaixo, calcule o salário de Fulano da Silva (itens 1 a 5):
 
