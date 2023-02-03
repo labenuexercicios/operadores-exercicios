@@ -12,13 +12,13 @@
 
 // >💡  **Dica**:   não se esqueça de **converter** as respostas para o tipo número
 
-Exercício 1
-a)
+//Exercício 1
+//a)
 let usuario = Number(prompt("Digite um número par"))
-b)
+//b)
 usuario = usuario % 2
 console.log(usuario)
-c)
-o resto da divisão sempre é 0
-d)
-o resto da divisão é sempre 1
+//c)
+//o resto da divisão sempre é 0
+//d)
+//o resto da divisão é sempre 1
