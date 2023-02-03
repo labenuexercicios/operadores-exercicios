@@ -1,4 +1,4 @@
-# Exercício 3
+`# Exercício 3
 
 ### Parte 1
 Escreva as operações lógicas abaixo em formato de código. Imprima no console se o valor da operação é verdadeiro ou falso:

@@ -1,3 +1,4 @@
+
 # Exercício 1
 
 Construa um programa que:
