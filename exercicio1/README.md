@@ -1,4 +1,4 @@
-# Exercício 1
+let# Exercício 1
 
 Construa um programa que:
 
