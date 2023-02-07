@@ -1,0 +1,1 @@
+prompt ("Escreva um número par")
