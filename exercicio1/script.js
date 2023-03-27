@@ -1,5 +1,5 @@
 // # Exercício 1 envio
-console.log(`Rodou`)
+console.log(`Rodou `)
 // Construa um programa que:
 
 // a) Peça ao usuário que insira um número **par**

@@ -1,4 +1,4 @@
-console.log("orci") 
+console.log("orci ") 
 
 // # Exercício 2 envio
 
