@@ -54,3 +54,5 @@ let Maio = (((salario + (vendasMaio*0.1)) * inss)+ auxilioCreche*filhos)
 let Junho = (((salario + (vendasJunho*0.1)) * inss)+ auxilioCreche*filhos)
 let media = (Jan + Fev + Marc + Abril + Maio + Junho) / 6
 console.log ("A média salarial dos ultimos 6 meses é ", media)
+
+//.
