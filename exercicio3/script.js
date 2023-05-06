@@ -10,8 +10,10 @@ let num4 = ! (20 > 50 || 50 > 60)
 
 // PARTE 02
 
-let salarioFixo = 2000 + 45.50*2
-console.log("Salario mais Creche R$", salarioFixo);
+let salarioFixo = 2000 
+let creche = 45.50 *2
+const salarioCrecha = salarioFixo+creche
+console.log("Salario mensal R$",salarioCrecha);
 let comissaoJan = 5780.50 * 0.10
 let comissaoFev = 3418.41 * 0.10
 let comissaoMarc = 4124.10 * 0.10
