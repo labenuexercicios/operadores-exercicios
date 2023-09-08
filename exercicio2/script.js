@@ -3,9 +3,9 @@ let num2 = +prompt('Digite o segundo número')
 
 console.log(`1 - O primeiro número: ${num1} é maior que o segundo número: ${num2}`, num1 > num2);
  console.log(`2 - O primeiro número: ${num1} é igual o segundo número: ${num2}`, num1 == num2);
-// console.log(`3 - O primeiro número: ${num1} é divisivel pelo segundo número: ${num2}`, num1 / num2);
-//console.log(`4 - O primeiro número: ${num1} não é divisivel pelo segundo número: ${num2}` (!num1) / (!num2));
-console.log(`${num1 % num2}`);
+ console.log(`${num1 % num2 === 0}`);
+ console.log(`${num2 % num1 === 0}`);
+ console.log(`${num1 % num2}`);
 
 
 // O primeiro numero é maior que o segundo? true
